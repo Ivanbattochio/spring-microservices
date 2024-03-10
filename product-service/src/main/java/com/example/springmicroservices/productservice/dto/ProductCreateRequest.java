@@ -1,6 +1,6 @@
-package com.example.springmicroservices.microservices.dto;
+package com.example.springmicroservices.productservice.dto;
 
-import com.example.springmicroservices.microservices.model.Product;
+import com.example.springmicroservices.productservice.model.Product;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

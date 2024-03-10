@@ -1,9 +1,9 @@
-package com.example.springmicroservices.microservices.controller;
+package com.example.springmicroservices.productservice.controller;
 
 
-import com.example.springmicroservices.microservices.dto.ProductCreateRequest;
-import com.example.springmicroservices.microservices.model.Product;
-import com.example.springmicroservices.microservices.repository.IProductRepository;
+import com.example.springmicroservices.productservice.dto.ProductCreateRequest;
+import com.example.springmicroservices.productservice.model.Product;
+import com.example.springmicroservices.productservice.repository.IProductRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

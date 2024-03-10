@@ -1,4 +1,4 @@
-package com.example.springmicroservices.microservices.model;
+package com.example.springmicroservices.productservice.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

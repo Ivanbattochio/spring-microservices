@@ -1,9 +1,9 @@
-package com.example.springmicroservices.microservices.service;
+package com.example.springmicroservices.productservice.service;
 
-import com.example.springmicroservices.microservices.dto.ProductCreateRequest;
-import com.example.springmicroservices.microservices.dto.ProductDTO;
-import com.example.springmicroservices.microservices.model.Product;
-import com.example.springmicroservices.microservices.repository.IProductRepository;
+import com.example.springmicroservices.productservice.dto.ProductCreateRequest;
+import com.example.springmicroservices.productservice.dto.ProductDTO;
+import com.example.springmicroservices.productservice.model.Product;
+import com.example.springmicroservices.productservice.repository.IProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

@@ -1,9 +1,9 @@
-package com.example.springmicroservices.microservices.controller;
+package com.example.springmicroservices.productservice.controller;
 
 
-import com.example.springmicroservices.microservices.dto.ProductCreateRequest;
-import com.example.springmicroservices.microservices.dto.ProductDTO;
-import com.example.springmicroservices.microservices.service.ProductService;
+import com.example.springmicroservices.productservice.dto.ProductCreateRequest;
+import com.example.springmicroservices.productservice.dto.ProductDTO;
+import com.example.springmicroservices.productservice.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
