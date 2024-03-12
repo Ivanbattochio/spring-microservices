@@ -23,4 +23,8 @@ public class OrderRequest {
 
         return order;
     }
+
+    public List<String> getOrderSkuCodes() {
+        return this.getOrderLineItemsList().stream().map(OrderLineItemsDTO::getSkuCode).toList();
+    }
 }
