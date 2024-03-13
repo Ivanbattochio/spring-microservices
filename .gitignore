@@ -23,8 +23,9 @@
 hs_err_pid*
 replay_pid*
 
-../order-service/.gradle
+.gradle
 **/build/
+**/.gradle/
 !src/**/build/
 
 # Ignore Gradle GUI config
