@@ -8,7 +8,6 @@ import com.example.springmicroservices.orderservice.model.Order;
 import com.example.springmicroservices.orderservice.repository.IOrderRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -24,15 +23,15 @@ public class OrderService {
 
     private final IOrderRepository orderRepository;
 
-    private final WebClient webClientaaa;
+    private final WebClient.Builder webClientBuilder;
 
     public OrderDTO placeOrder(OrderRequest orderRequest) {
 
 
         List<String> skuCodes = orderRequest.getOrderSkuCodes();
 
-        InventoryResponse[] inventoryResponses = webClientaaa.get()
-                .uri("http://localhost:8082/api/inventory",
+        InventoryResponse[] inventoryResponses = webClientBuilder.build().get()
+                .uri("http://inventory-service/api/inventory",
                         uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
                 .retrieve()
                 .bodyToMono(InventoryResponse[].class)
